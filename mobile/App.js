@@ -1,6 +1,7 @@
 import React from "react";
 import { StatusBar } from "react-native";
-import Home from "./src/home/index";
+import StatusBarIos from "./src/components/GeneralStatusBar";
+import Home from "./src/home/HomeIndex";
 
 export default function App() {
   return (
@@ -8,7 +9,7 @@ export default function App() {
       {Platform.OS === "android" ? (
         <StatusBar barStyle="light-content" backgroundColor="#9381ff" />
       ) : (
-        <StatusBar barStyle="dark-content" backgroundColor="#9381ff" />
+        <StatusBarIos barStyle="light-content" backgroundColor="#9381ff" />
       )}
 
       <Home />

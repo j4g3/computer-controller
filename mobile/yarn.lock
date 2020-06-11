@@ -4339,10 +4339,9 @@ react-native-iphone-x-helper@^1.0.2:
   resolved "https://registry.yarnpkg.com/react-native-iphone-x-helper/-/react-native-iphone-x-helper-1.2.1.tgz#645e2ffbbb49e80844bb4cbbe34a126fda1e6772"
   integrity sha512-/VbpIEp8tSNNHIvstuA3Swx610whci1Zpc9mqNkqn14DkMbw+ORviln2u0XyHG1kPvvwTNGZY6QpeFwxYaSdbQ==
 
-react-native-responsive-fontsize@^0.4.3:
+"react-native-responsive-fontsize@https://github.com/j4g3/react-native-responsive-fontSize":
   version "0.4.3"
-  resolved "https://registry.yarnpkg.com/react-native-responsive-fontsize/-/react-native-responsive-fontsize-0.4.3.tgz#87bb9ea0093d74e30518547e443b3218abb5fa80"
-  integrity sha512-Xsy2Rmx6F6RP1YOY56NdttC/NdpeA1wX+aabTLXjeKw2MF0NilL9Vsqx3mf/gR8/PbU/c/FQMpCV2Ogt8rHNGQ==
+  resolved "https://github.com/j4g3/react-native-responsive-fontSize#80ed32496efb5a5eec551b924652b6f96b6cc69a"
   dependencies:
     react-native-iphone-x-helper "^1.0.2"
 
