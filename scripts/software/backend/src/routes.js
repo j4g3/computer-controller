@@ -1,5 +1,5 @@
-import { Router } from "express";
-import { spawnSync } from "child_process";
+const { Router } = require("express");
+const { spawnSync } = require("child_process");
 const running = "Is running command.";
 const routes = Router();
 
