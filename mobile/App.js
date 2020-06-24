@@ -7,9 +7,9 @@ export default function App() {
   return (
     <>
       {Platform.OS === "android" ? (
-        <StatusBar barStyle="light-content" backgroundColor="#9381ff" />
+          <StatusBar barStyle="light-content" backgroundColor="#9381ff" />
       ) : (
-        <StatusBarIos barStyle="light-content" backgroundColor="#9381ff" />
+          <StatusBarIos barStyle="light-content" backgroundColor="#9381ff" />
       )}
 
       <Home />
