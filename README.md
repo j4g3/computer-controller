@@ -36,8 +36,6 @@ Give a ⭐️ if this project helped you!
 
 Copyright © 2020 [João Guilherme](https://github.com/j4g3).<br />
 This project is [AGPL--3.0](https://github.com/j4g3/computer-controller/blob/master/LICENSE) licensed.
-<<<<<<< HEAD
-=======
 
 ---
 
