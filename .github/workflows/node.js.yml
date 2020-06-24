@@ -25,4 +25,3 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
     - run: cd scripts/software/backend && npm install
-    - run: node scripts/software/backend/index.js
