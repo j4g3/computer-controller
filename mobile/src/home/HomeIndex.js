@@ -1,4 +1,5 @@
 import React from "react";
+import { useState } from "react-native";
 import {
   Wrapper,
   HeaderView,
@@ -10,9 +11,14 @@ import {
   Connect,
 } from "./style";
 import ConnectButton from "./components/button";
+import ButtonPower from "./components/buttonPower";
 
 export default function App() {
-  return (
+
+	const [setPower, Power] = useState(false);
+	const [setLogout, Logout] = useState(false);
+
+	return (
     <Wrapper>
       <HeaderView>
         <HeaderText>Connect Computer</HeaderText>
@@ -24,8 +30,9 @@ export default function App() {
           <ConnectButton />
         </HeaderContainer>
       </HeaderView>
-      <MainView>
-        <MainText></MainText>
+			<MainView>
+				<ButtonPower text="Desligar" />
+				<ButtonPower text="Logout" />
       </MainView>
     </Wrapper>
   );

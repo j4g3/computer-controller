@@ -42,9 +42,12 @@ export const HeaderInput = styled(TextInput)`
   text-align: left;
   color: #f8f7ff;
 `;
-
 export const MainView = styled(View)`
   padding: ${RFPercentage(2, "pixel")};
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	flex-direction: row;
 `;
 
 export const MainText = styled(Text)`
