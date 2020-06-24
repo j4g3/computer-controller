@@ -17,4 +17,4 @@ routes.get("/logout", (req, res) => {
   spawnSync("gnome-session-quit");
 });
 
-export default routes;
+module.exports = routes;
