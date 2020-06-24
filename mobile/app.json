@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "mobile",
+    "name": "Computer Controller",
     "slug": "mobile",
-    "platforms": ["ios", "android", "web"],
+    "platforms": ["android"],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -14,9 +14,6 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
-    "ios": {
-      "supportsTablet": true
-    }
+    "assetBundlePatterns": ["**/*"]
   }
 }

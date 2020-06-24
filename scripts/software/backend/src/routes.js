@@ -1,20 +1,30 @@
 const { Router } = require("express");
-const { spawnSync } = require("child_process");
-const running = "Is running command.";
+const { spawnSync, exec } = require("child_process");
 const routes = Router();
+const running = { data: "Is running command." };
 
 routes.get("/online", (req, res) => {
-  res.send({ status: "Is running." });
+  return res.send({ status: "Is running." });
 });
 
-routes.get("/shutdown", (req, res) => {
-  res.send({ data: running });
-  spawnSync("shutdown 0");
+routes.get("/shutdown", async (req, res) => {
+  return res.send(running);
+  await exec("shutdown -p now");
 });
 
-routes.get("/logout", (req, res) => {
-  res.send({ data: running });
-  spawnSync("gnome-session-quit");
+routes.get("/logout", async (req, res) => {
+  return res.send(running);
+  await spawnSync("gnome-session-quit");
+});
+
+routes.get("/reboot", async (req, res) => {
+  return res.send(running);
+  await exec("reboot");
+});
+
+routes.get("/kill/process/all", async (req, res) => {
+  return res.send(running);
+  await exec("shutdown -H now");
 });
 
 module.exports = routes;
