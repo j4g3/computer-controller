@@ -9,6 +9,10 @@
   <a href="https://twitter.com/j4g3dev" target="_blank">
     <img alt="Twitter: j4g3dev" src="https://img.shields.io/twitter/follow/j4g3dev.svg?style=social" />
   </a>
+  
+  <a>
+    <img src="https://github.com/j4g3/computer-controller/workflows/Node.js%20CI/badge.svg?branch=master"/>
+  </a>
 
 </p>
 
@@ -19,7 +23,6 @@
 ```
 Download software for desktop and software for phone(Android)
 ```
-  ![Node.js CI](https://github.com/j4g3/computer-controller/workflows/Node.js%20CI/badge.svg?branch=master)
 ## Author
 
 👤 **João Guilherme**
