@@ -14,11 +14,10 @@ import ConnectButton from "./components/button";
 import ButtonPower from "./components/buttonPower";
 
 export default function App() {
+  const [setPower, Power] = useState(false);
+  const [setLogout, Logout] = useState(false);
 
-	const [setPower, Power] = useState(false);
-	const [setLogout, Logout] = useState(false);
-
-	return (
+  return (
     <Wrapper>
       <HeaderView>
         <HeaderText>Connect Computer</HeaderText>
@@ -30,9 +29,11 @@ export default function App() {
           <ConnectButton />
         </HeaderContainer>
       </HeaderView>
-			<MainView>
-				<ButtonPower text="Desligar" />
-				<ButtonPower text="Logout" />
+      <MainView>
+        <ButtonPower text="Kill Process" />
+        <ButtonPower text="PowerOff" />
+        <ButtonPower text="Reboot" />
+        <ButtonPower text="Logout" />
       </MainView>
     </Wrapper>
   );
