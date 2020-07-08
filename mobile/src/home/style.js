@@ -44,10 +44,10 @@ export const HeaderInput = styled(TextInput)`
 `;
 export const MainView = styled(View)`
   padding: ${RFPercentage(2, "pixel")};
-	justify-content: center;
-	text-align: center;
-	align-items: center;
-	flex-direction: row;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
 `;
 
 export const MainText = styled(Text)`

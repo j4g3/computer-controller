@@ -8,7 +8,7 @@ routes.get("/online", (req, res) => {
 });
 
 routes.get("/shutdown", async (req, res) => {
-  await exec("shutdown -p now");
+  await exec("shutdown now");
   return res.send(running);
 });
 

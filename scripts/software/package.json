@@ -1,0 +1,103 @@
+{
+  "name": "ComputerController",
+  "version": "0.1.1",
+  "private": false,
+  "homepage": "./",
+  "main": "public/electron.js",
+  "dependencies": {
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.3.2",
+    "@testing-library/user-event": "^7.1.2",
+    "axios": "^0.19.2",
+    "cors": "^2.8.5",
+    "electron-is-dev": "^1.2.0",
+    "eslint-plugin-react": "^7.20.3",
+    "express": "^4.17.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-scripts": "3.4.1",
+    "styled-components": "^5.1.1"
+  },
+  "devDependencies": {
+    "@rescripts/cli": "^0.0.14",
+    "@rescripts/rescript-env": "^0.0.12",
+    "concurrently": "^5.2.0",
+    "electron": "^9.0.0",
+    "electron-builder": "^22.7.0",
+    "eslint": "^6.6.0",
+    "eslint-plugin-react-hooks": "^4.0.5",
+    "typescript": "^3.9.3",
+    "wait-on": "^5.0.0"
+  },
+  "license": "AGPL-3.0",
+  "scripts": {
+    "start": "rescripts start",
+    "build": "rescripts build",
+    "test": "rescripts test",
+    "eject": "react-scripts eject",
+    "postinstall": "electron-builder install-app-deps",
+    "preelectron-pack": "yarn build",
+    "electron-pack": "electron-builder -mw",
+    "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
+    "snap": "electron-builder --linux snap"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "author": {
+    "name": "João Guilherme",
+    "email": "j43gdev@gmail.com"
+  },
+  "build": {
+    "appId": "com.j4g3.ccontroller",
+    "productName": "Computer controller",
+    "copyright": "Copyright © 2020 João Guilherme",
+    "mac": {
+      "icon": "./assets/icons/icon.icns",
+      "category": "public.app-category.utilities"
+    },
+    "linux": {
+      "category": "utilities",
+      "icon": "./build/icons",
+      "target": [
+        "deb",
+        "AppImage",
+        "snap"
+      ],
+      "snap": {
+        "publish": [
+          {
+            "provider": "github"
+          },
+          {
+            "provider": "snapStore",
+            "channel": "edge"
+          }
+        ]
+      },
+      "category": "Utility"
+    },
+    "win": {
+      "icon": "./assets/icons/icon.png"
+    },
+    "files": [
+      "build/**/*",
+      "node_modules/**/*"
+    ],
+    "directories": {
+      "buildResources": "assets"
+    }
+  }
+}
