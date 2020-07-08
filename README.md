@@ -46,3 +46,4 @@ This project is [AGPL--3.0](https://github.com/j4g3/computer-controller/blob/mas
 ---
 
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
