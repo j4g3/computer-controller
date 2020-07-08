@@ -24,4 +24,4 @@ jobs:
         with:
           node-version: ${{ matrix.node-version }}
       - run: cd scripts/software && npm install
-      - run: cd scripts/software && yarn electron-pack --linux
+      - run: cd scripts/software && yarn snap
