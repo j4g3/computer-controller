@@ -75,19 +75,7 @@
         "deb",
         "AppImage",
         "snap"
-      ],
-      "snap": {
-        "publish": [
-          {
-            "provider": "github"
-          },
-          {
-            "provider": "snapStore",
-            "channel": "edge"
-          }
-        ]
-      },
-      "category": "Utility"
+      ]
     },
     "win": {
       "icon": "./assets/icons/icon.png"
