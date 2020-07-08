@@ -11,7 +11,7 @@
   </a>
   
   <a>
-    <img src="https://github.com/j4g3/computer-controller/workflows/Node.js%20CI/badge.svg?branch=master"/>
+    <img src="https://github.com/j4g3/computer-controller/workflows/Software%20CLI/badge.svg"/>
   </a>
 
 </p>
