@@ -23,6 +23,5 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: ${{ matrix.node-version }}
-      - run: cd scripts/software
-      - run: npm install
-      - run: yarn electron-pack --linux
+      - run: cd scripts/software && npm install
+      - run: cd scripts/software && yarn electron-pack --linux
