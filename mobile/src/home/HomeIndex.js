@@ -14,8 +14,8 @@ import ConnectButton from "./components/button";
 import ButtonPower from "./components/buttonPower";
 
 export default function App() {
-  const [setPower, Power] = useState(false);
-  const [setLogout, Logout] = useState(false);
+  // const [setPower, Power] = useState(false);
+  // const [setLogout, Logout] = useState(false);
 
   return (
     <Wrapper>
