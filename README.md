@@ -11,10 +11,7 @@
   
   <a>
     <img src="https://github.com/j4g3/computer-controller/workflows/Software%20CLI/badge.svg"/>
-  </a
 
-  <a href="https://snapcraft.io/computercontroller">
-    <img alt="Get it from the Snap Store" src="https://snapcraft.io/static/images/badges/en/snap-store-black.svg" />
   </a>
 
 </p>
@@ -50,3 +47,4 @@ This project is [AGPL--3.0](https://github.com/j4g3/computer-controller/blob/mas
 ---
 
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
