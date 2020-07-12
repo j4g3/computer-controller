@@ -19,7 +19,6 @@ export const HeaderView = styled(View)`
 export const HeaderText = styled(Text)`
   color: #f8f7ff;
   text-align: center;
-  text-transform: uppercase;
   font-size: ${RFPercentage(3.4, "pixel")};
   font-weight: bold;
 `;
@@ -34,14 +33,15 @@ export const HeaderContainer = styled(View)`
 `;
 
 export const HeaderInput = styled(TextInput)`
-  padding: 5px;
-  margin: 5px;
+  padding: ${RFPercentage(1, "pixel")};
   width: ${RFPercentage(20, "pixel")};
   border-bottom-width: 1px;
   border-bottom-color: #f8f7ff;
   text-align: left;
+  font-size: ${RFPercentage(2.2, "pixel")};
   color: #f8f7ff;
 `;
+
 export const MainView = styled(View)`
   padding: ${RFPercentage(2, "pixel")};
   justify-content: center;
@@ -50,6 +50,9 @@ export const MainView = styled(View)`
   flex-direction: column;
 `;
 
-export const MainText = styled(Text)`
-  color: #333;
+export const ErrorText = styled(Text)`
+  color: #ef233c;
+  font-weight: bold;
+  font-size: ${RFPercentage(2.7, "pixel")};
+  text-align: center;
 `;

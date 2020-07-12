@@ -6,9 +6,9 @@ export const ButtonAction = styled(TouchableWithoutFeedback)``;
 
 export const ButtonContainer = styled(View)`
   padding: ${RFPercentage(2, "pixel")};
-  border-radius: 25px;
+  border-radius: ${RFPercentage(2, "pixel")};
   background: #b8b8ff;
-  margin: 5px;
+  margin: ${RFPercentage(0.5, "pixel")};
 `;
 
 export const ButtonText = styled(Text)`

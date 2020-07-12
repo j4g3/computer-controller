@@ -5,13 +5,13 @@
     <img alt="License: AGPL--3.0" src="https://img.shields.io/badge/License-AGPL--3.0-yellow.svg" />
   </a>
 
-  
   <a href="https://twitter.com/j4g3dev" target="_blank">
     <img alt="Twitter: j4g3dev" src="https://img.shields.io/twitter/follow/j4g3dev.svg?style=social" />
   </a>
   
   <a>
     <img src="https://github.com/j4g3/computer-controller/workflows/Software%20CLI/badge.svg"/>
+
   </a>
 
 </p>
@@ -23,6 +23,7 @@
 ```
 Download software for desktop and software for phone(Android)
 ```
+
 ## Author
 
 👤 **João Guilherme**

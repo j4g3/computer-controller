@@ -7,9 +7,10 @@ npm-debug.*
 *.key
 *.mobileprovision
 *.orig.*
+*.swp
+fakeServer/
 web-build/
 web-report/
 yarn-error.log
 # macOS
 .DS_Store
-*.swp
