@@ -4,6 +4,7 @@
   "private": false,
   "homepage": "./",
   "main": "public/electron.js",
+  "description": "Set of software to control computer remotely.",
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
