@@ -38,7 +38,7 @@
     "eject": "react-scripts eject",
     "postinstall": "electron-builder install-app-deps",
     "preelectron-pack": "yarn build",
-    "electron-pack": "electron-builder -mw",
+    "electron-pack": "electron-builder -ml",
     "electron-dev": "concurrently \"BROWSER=none yarn start\" \"wait-on http://localhost:3000 && electron .\"",
     "snap": "electron-builder --linux snap"
   },
@@ -66,20 +66,18 @@
     "productName": "Computer controller",
     "copyright": "Copyright © 2020 João Guilherme",
     "mac": {
-      "icon": "./assets/icons/icon.icns",
-      "category": "public.app-category.utilities"
+      "icon": "./build/assets/icons",
+      "category": "public.app-category.utilities",
+      "target": "tar.gz"
     },
     "linux": {
       "category": "utilities",
-      "icon": "./build/icons",
+      "icon": "./build/assets/icons",
       "target": [
         "deb",
         "AppImage",
         "snap"
       ]
-    },
-    "win": {
-      "icon": "./assets/icons/icon.png"
     },
     "files": [
       "build/**/*",
