@@ -18,10 +18,8 @@
 
 > Set of software to control computer remotely
 
-<center>
 <img src="./assets/desktop.png">
 <img src="./assets/Mobile.jpg">
-</center>
 ## Usage
 
 ```
