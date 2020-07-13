@@ -18,11 +18,25 @@
 
 > Set of software to control computer remotely
 
+<center>
+<img src="./assets/desktop.png">
+<img src="./assets/Mobile.jpg">
+</center>
 ## Usage
 
 ```
 Download software for desktop and software for phone(Android)
 ```
+
+## Installation
+
+Linux
+
+```console
+sudo snap install computercontroller
+```
+
+Mac - <a href="https://github.com/j4g3/computer-controller/releases/download/v0.1.1/Computer.controller-0.1.1-mac.zip">Download</a>
 
 ## Author
 
@@ -47,4 +61,3 @@ This project is [AGPL--3.0](https://github.com/j4g3/computer-controller/blob/mas
 ---
 
 _This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
-
