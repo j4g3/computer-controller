@@ -35,8 +35,8 @@ Linux
 sudo snap install computercontroller
 ```
 
-Mac - <a href="https://github.com/j4g3/computer-controller/releases/download/v0.1.1/Computer.controller-0.1.1-mac.zip">Download</a>
-
+Mac - <a href="https://github.com/j4g3/computer-controller/releases/download/v0.1.2/Computer.controller-0.1.2-mac.zip">Download</a>
+2
 ## Author
 
 👤 **João Guilherme**
