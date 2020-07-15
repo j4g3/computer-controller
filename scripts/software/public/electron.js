@@ -2,6 +2,7 @@ const { app, BrowserWindow } = require("electron");
 const path = require("path");
 const express = require("express");
 const cors = require("cors");
+const isDev = require("electron-is-dev");
 const routes = require("./src/routes.js");
 const appAPI = express();
 
@@ -15,6 +16,7 @@ function AppElectron() {
     height: 400,
     maxWidth: 244,
     maxHeight: 400,
+
     title: "Computer Controller",
     webPreferences: {
       plugins: true,
@@ -27,8 +29,12 @@ function AppElectron() {
     },
   });
   win.setMenuBarVisibility(false);
-  win.loadURL(`file://${path.join(__dirname, "../build/index.html")}`);
   win.on("closed", () => (win = null));
+  win.loadURL(
+    isDev
+      ? "http://localhost:3000"
+      : `file://${path.join(__dirname, "../build/index.html")}`
+  );
 }
 app.on("ready", AppElectron);
 
