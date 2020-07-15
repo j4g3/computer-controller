@@ -29,11 +29,7 @@ Download software for desktop and software for phone(Android)
 
 ## Installation
 
-Linux
-
-```console
-sudo snap install computercontroller
-```
+Linux - <a href="https://github.com/j4g3/computer-controller/releases/download/v0.1.2/ComputerController_0.1.2_amd64.deb">Download .deb</a>, <a href="https://github.com/j4g3/computer-controller/releases/download/v0.1.2/Computer.controller-0.1.2.AppImage">Download .AppImage</a>
 
 Mac - <a href="https://github.com/j4g3/computer-controller/releases/download/v0.1.2/Computer.controller-0.1.2-mac.tar.gz">Download</a>
 
