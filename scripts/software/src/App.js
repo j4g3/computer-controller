@@ -12,18 +12,15 @@ const App = () => {
   const [IP, setIP] = useState("");
   const [status, setStatus] = useState(false);
 
-  var address,
-    ifaces = require("os").networkInterfaces();
-  for (var dev in ifaces) {
-    // eslint-disable-next-line
-    ifaces[dev].filter((details) =>
-      details.family === "IPv4" && details.internal === false
-        ? (address = details.address)
-        : undefined
-    );
-  }
-  setIP(address);
+  async function getIP() {
+    const internalIp = require("internal-ip");
 
+    (async () => {
+      setIP(await internalIp.v4());
+      //=> '10.0.0.79'
+    })();
+  }
+  getIP();
   async function TestStatusOfApi() {
     const ResponseRequest = await BaseRequestOfApiForTest.get("/online");
     if (ResponseRequest.status === 200) {

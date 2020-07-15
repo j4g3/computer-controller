@@ -1,6 +1,6 @@
 {
   "name": "ComputerController",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": false,
   "homepage": "./",
   "main": "public/electron.js",
@@ -12,8 +12,10 @@
     "axios": "^0.19.2",
     "cors": "^2.8.5",
     "electron-is-dev": "^1.2.0",
+    "electron-renderer": "^2.0.4",
     "eslint-plugin-react": "^7.20.3",
     "express": "^4.17.1",
+    "internal-ip": "^6.0.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-scripts": "3.4.1",
@@ -27,6 +29,7 @@
     "electron-builder": "^22.7.0",
     "eslint": "^6.6.0",
     "eslint-plugin-react-hooks": "^4.0.5",
+    "foreman": "^3.0.1",
     "typescript": "^3.9.3",
     "wait-on": "^5.0.0"
   },
@@ -66,13 +69,13 @@
     "productName": "Computer controller",
     "copyright": "Copyright © 2020 João Guilherme",
     "mac": {
-      "icon": "./build/assets/icons",
+      "icon": "./assets/icons",
       "category": "public.app-category.utilities",
       "target": "tar.gz"
     },
     "linux": {
       "category": "utilities",
-      "icon": "./build/assets/icons",
+      "icon": "./assets/icons",
       "target": [
         "deb",
         "AppImage",
