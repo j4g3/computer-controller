@@ -1,8 +1,8 @@
 {
-  "name": "desktop",
-  "productName": "desktop",
+  "name": "computer-controller",
+  "productName": "Computer Controller",
   "version": "1.0.0",
-  "description": "My Electron application description",
+  "description": "Computer Controller is application from remote control your computer with phone",
   "main": ".webpack/main",
   "scripts": {
     "start": "electron-forge start",
@@ -19,7 +19,9 @@
   "license": "MIT",
   "config": {
     "forge": {
-      "packagerConfig": {},
+      "packagerConfig": {
+        "icon": "./icons/icon.icns"
+      },
       "makers": [
         {
           "name": "@electron-forge/maker-squirrel",
@@ -46,6 +48,7 @@
         [
           "@electron-forge/plugin-webpack",
           {
+            "devContentSecurityPolicy": "default-src * self blob: data: gap:; style-src * self 'unsafe-inline' blob: data: gap:; script-src * 'self' 'unsafe-eval' 'unsafe-inline' blob: data: gap:; object-src * 'self' blob: data: gap:; img-src * self 'unsafe-inline' blob: data: gap:; connect-src self * 'unsafe-inline' blob: data: gap:; frame-src * self blob: data: gap:;",
             "mainConfig": "./webpack.main.config.js",
             "renderer": {
               "config": "./webpack.renderer.config.js",
@@ -86,10 +89,18 @@
     "@chakra-ui/react": "^1.7.3",
     "@emotion/react": "11",
     "@emotion/styled": "11",
+    "@types/axios": "^0.14.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
     "@types/react": "^17.0.37",
     "@types/react-dom": "^17.0.11",
+    "axios": "^0.24.0",
+    "cors": "^2.8.5",
     "electron-squirrel-startup": "^1.0.0",
+    "express": "^4.17.1",
     "framer-motion": "4",
+    "internal-ip": "^7.0.0",
+    "os": "^0.1.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2"
   }
